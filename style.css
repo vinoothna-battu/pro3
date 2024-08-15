@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+ 
+box-shadow: border-box;
+
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.calculator {
+    width: 100%;
+    height: 100%;
+    background-color: #647299;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.calc p {
+    width: 20vw;
+    height: 4vh;
+    border: 2px solid black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font :message-box;
+    font-weight: 700;
+    border: none;
+    font-size: 30px;
+}
+
+.box1{
+    width: 40vw;
+    height: 14vh;
+ 
+}
+  
+#display{
+    width: 40vw;
+height: 14vh;
+border-radius: 0.5rem;;
+opacity: 0px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+background-color: rgba(24, 31, 50, 1);
+
+color: aliceblue;
+font-size: 55px;
+text-align: right;
+}
+.rect1{
+    width: 40vw;
+height:50vh;
+padding:1em 0;
+
+border-radius: 0.5rem;
+opacity: 0px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+background-color: rgba(24, 31, 50, 1);
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:6%
+
+ 
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width:90%;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button {
+   padding: 0.5em 0;
+   width:90%;
+    font-size: 24px;
+    top:30%;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(234, 227, 219, 1);
+    border-radius: 12px;
+    color: rgba(59, 70, 100, 1);
+    font-family: Inter;
+font-size: 30px;
+font-weight: 800;
+line-height: 36.31px;
+text-align: center;
+
+    
+    transition: background-color 0.3s,tranform 0.1s;
+}
+
+
+.operator {
+    background-color: rgba(234, 227, 219, 1);
+    font-family: Inter;
+font-size: 30px;
+font-weight: 800;
+line-height: 36.31px;
+text-align: center;
+
+}
+.operator:hover{
+    background-color: rgba(234, 227, 219, 1);
+}
+
+
+.equals {
+    grid-column: span 2;
+    background-color: red;
+    color: white;
+    width:90%;
+    height: 100%;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+
+.equals:hover {
+    background-color: red;
+}
+.Reset{
+    grid-column: span 2;
+    background: rgba(100, 114, 153, 1);
+    color:white;
+    width: 90%;
+    height: 100%;
+    padding: 0.5em 0;
+    cursor: pointer;
+
+}
+.Reset:hover{
+    background: rgba(100, 114, 153, 1);
+
+}
+.del{
+    background-color:rgba(100, 114, 153, 1);
+    color:white;
+    width:90%;
+    padding: 0.5em 0;
+    cursor: pointer;
+
+}
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%; 
+    }
+
+    #display {
+        font-size: 28px;
+
+         width: 90%;
+    }
+
+    .button {
+        font-size: 20px;
+        width: 90%; 
+    }
+}
+
+
+
